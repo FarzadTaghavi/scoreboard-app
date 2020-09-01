@@ -4,7 +4,7 @@ export default function AddPlayerForm(props) {
   const [name, set_name] = useState("");
 
   function submit(event) {
-    event.preventDefault();
+    event.preventDefault(); //stops page from refreshing
     props.addPlayer(name);
     set_name("");
   }

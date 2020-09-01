@@ -109,8 +109,8 @@ export default function Scoreboard() {
         <button onClick={randomizeScore}>Randomize Score</button>
       </p>
       <p>Player's scores:</p>
-      {sortedPlayers.map((player) => (
-        <div>
+      {sortedPlayers.map((player, i) => (
+        <div key={i}>
           <ul>
             <Player
               id={player.id}
