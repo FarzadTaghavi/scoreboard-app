@@ -20,7 +20,7 @@ export default function Scoreboard() {
     { id: 4, name: "Lisa", score: 42 },
   ]);
 
-  const players_score_sorted =
+  /* const players_score_sorted =
     // first "copy" the array
     [...players];
   // then sort it with the `compare_score` callback function
@@ -30,7 +30,7 @@ export default function Scoreboard() {
     // first "copy" the array
     [...players];
   // then sort it with the `compare_score` callback function
-  players.sort(compare_name);
+  players.sort(compare_name); */
 
   const change_sorting = (event) => {
     set_sort_by(event.target.value);
